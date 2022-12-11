@@ -10,11 +10,15 @@ let score = 1;
 let minScore = 0;
 let maxScore = 10;
 
+function defaultBackground() {
+  body.style.backgroundColor = "";
+}
+
 function addScore() {
   if (score <= maxScore) {
     scoreCount.textContent = score++;
     scoreAlert.textContent = "Continue clicking to reach the final score!";
-    body.style.backgroundColor = "";
+    defaultBackground();
   }
 
   if (score > maxScore) {
@@ -27,7 +31,7 @@ function addScore() {
 function reduceScore() {
   scoreCount.textContent = score--;
   scoreAlert.textContent = "You are now decreasing the score...";
-  body.style.backgroundColor = "";
+  defaultBackground();
 
   if (score < minScore) {
     score = minScore;
@@ -41,7 +45,7 @@ function resetScore() {
   score = "";
   scoreCount.textContent = "";
   scoreAlert.textContent = "";
-  body.style.backgroundColor = "";
+  defaultBackground();
 }
 
 btnAdd.addEventListener("click", addScore);
