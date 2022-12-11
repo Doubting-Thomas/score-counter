@@ -6,7 +6,7 @@ const btnReduce = document.querySelector(".btn-reduce");
 const btnReset = document.querySelector(".btn-reset");
 const body = document.querySelector("body");
 
-let score = 1;
+let score = 0;
 let minScore = 0;
 let maxScore = 10;
 
@@ -36,7 +36,7 @@ function reduceScore() {
   if (score < minScore) {
     score = minScore;
     scoreAlert.textContent =
-      "You have passed the minimum threshold. Increase the count to continue.";
+      "You cannot go below the minimum threshold. Increase the count to continue.";
     body.style.backgroundColor = "#ff1b6b";
   }
 }
