@@ -1,3 +1,7 @@
+:root {
+  --color-primary: #103783;
+  --color-secondary: #fff;
+}
 body {
   font-family: cursive;
   font-weight: 400;
@@ -5,8 +9,8 @@ body {
   margin: 0 35rem;
   max-width: 60rem;
 
-  background-color: #103783;
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 html {
@@ -49,8 +53,8 @@ html {
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
-  background-color: #fff;
-  color: #103783;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 
   transition: all 0.3s;
 }
