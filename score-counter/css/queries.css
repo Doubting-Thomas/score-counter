@@ -1,0 +1,11 @@
+@media (max-width: 56.25em) {
+  body {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heading-main {
+    text-align: center;
+  }
+}
